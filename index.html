@@ -28,51 +28,63 @@
 		header {
 			margin: 2em auto 2em;
 		}
-	    header h1 {
-	        font-size: 6em;
-	        line-height: 2em;
-	        color: #444;
-	    }
-	    header h2 {
-	    	font-size: 3em;
-	    	line-height: 1.2em;
-	    	color: #999;
-	    }
-	    header h3 {
-	    	line-height: 3em;
-	    }
-	    a {
-	    	text-decoration: none;
-	    	color: #999;
-	    }
-	    main section {
-	    	display: inline-block;
-	    }
-	    main section a {
-	    	display: inline-block;
-	    	width: 10em;
-	    	height: 4em;
-	    	color: #444;
-	    	text-align: center;
-	    	padding-top: 2em;
-	    	cursor: pointer;
-	    	line-height: 1.4em;
-	    }
-	    main section a b {
-	    	font-weight: bold;
-	    }
-	    footer {
-	    	margin: 2em auto;
-	    }
-	    footer section {
-	    	text-align: left;
-	    	max-width: 800px;
-	    	margin: auto;
-	    	padding: 10px 20px;
-	    }
-	    footer h1 {
-	    	font-weight: bold;
-	    }
+    header h1 {
+        font-size: 6em;
+        line-height: 2em;
+        color: #444;
+    }
+    header h2 {
+    	font-size: 3em;
+    	line-height: 1.2em;
+    	color: #999;
+    }
+    header h3 {
+    	line-height: 3em;
+    }
+    a {
+    	text-decoration: none;
+    	color: #999;
+    }
+    main section {
+    	display: inline-block;
+    }
+    main section a {
+    	display: inline-block;
+    	width: 10em;
+    	height: 4em;
+    	color: #444;
+    	text-align: center;
+    	padding-top: 1em;
+    	cursor: pointer;
+    	line-height: 1.4em;
+    }
+    main section a b {
+    	font-weight: bold;
+    }
+    footer {
+    	margin: 2em auto;
+    }
+    footer section {
+    	text-align: left;
+    	max-width: 800px;
+    	margin: auto;
+    	padding: 10px 20px;
+    }
+    footer h1 {
+    	font-weight: bold;
+    }
+		.label {
+			background: gray;
+	    padding: 1px 6px;
+	    border-radius: 4px;
+	    color: white;
+			margin-top: 1em;
+			display: inline-block;
+		}
+		.label.--design { background: #EC0F47 }
+		.label.--infra { background: #A02C5D }
+		.label.--data-ai { background: #EE6B3B }
+		.label.--community { background: #15C286 }
 	</style>
 </head>
 <body>
@@ -83,16 +95,20 @@
     </header>
     <main>
 			<section>
-				<a href="https://www.tiltshift.nl"><b>TiltShift</b><br>probleemgedreven innovatie</a>
+				<a href="https://www.tiltshift.nl"><b>TiltShift</b><br>probleemgedreven innovatie</a><br>
+				<div class="label --design">design</div>
 			</section>
     	<section>
-    		<a href="https://www.clowder.it"><b>Clowder.IT</b><br>open source<br>zonder gedoe</a>
+				<a href="https://www.apitecture.nl"><b>Apitecture</b><br>advanced data services</a><br>
+				<div class="label --data-ai">data en AI</div>
     	</section>
     	<section>
-    		<a href="https://www.apitecture.nl"><b>Apitecture</b><br>advanced data services</a>
+				<a href="https://www.clowder.it"><b>Clowder.IT</b><br>open source<br>zonder gedoe</a><br>
+				<div class="label --infra">devOps</div>
     	</section>
     	<section>
-    		<a href="https://www.codefor.nl"><b>Code for NL</b><br>samenwerken aan de digitale overheid</a>
+				<a href="https://www.codefor.nl"><b>Code for NL</b><br>samenwerken aan de digitale overheid</a><br>
+				<div class="label --community">community</div>
     	</section>
     </main>
     <footer>
