@@ -1,6 +1,7 @@
 ---
 url: https://www.everybit.nl
 title: everybit.
+description: #publictech social enterprise incubation
 motto: publieke digitale transformatie.
 values: bit voor bit.
 image: https://www.everybit.nl/everybit.png
@@ -13,8 +14,8 @@ logo: https://www.everybit.nl/logo.png
 	<title>{{ page.title }} {{ page.motto }}</title>
 
 	<meta property='og:url' content='{{ page.url }}'>
-	<meta property='og:title' name='title' content='{{ page.title }} {{ page.motto }} {{ page.values }}'>
-	<meta property='og:description' name='description' content='{{ page.title }} {{ page.motto }} {{ page.values }}'>
+	<meta property='og:title' name='title' content='{{ page.title }} {{ page.motto }}'>
+	<meta property='og:description' name='description' content='{{ page.description}}'>
 	<meta property='og:image' content='{{ page.image }}'>
 	<link rel='image_src' href='{{ page.image }}'>
 
@@ -94,7 +95,7 @@ logo: https://www.everybit.nl/logo.png
     </header>
     <main>
         <section>
-		Advies en begeleiding van #publictech in-house innovatie en startups.
+		{{ page.description}}
         </section>
     </main>
     <footer>
